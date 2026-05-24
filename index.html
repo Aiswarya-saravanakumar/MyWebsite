@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aiswarya S | Full Stack Developer </title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary:#4f46e5;
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --text:#111827;
+      --muted:#6b7280;
+    }
+
+    *{scroll-behavior:smooth;}
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      margin:0;
+    }
+
+  
+    .navbar{
+      position:fixed;
+      top:0;
+      width:100%;
+      z-index:1000;
+      background:rgba(255,255,255,0.9);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid #e5e7eb;
+    }
+
+    .nav-container{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:12px 20px;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:#111827;
+      font-weight:500;
+      font-size:14px;
+      transition:0.3s;
+    }
+
+    .nav-links a:hover{
+      color:var(--primary);
+    }
+
+    .brand{
+      font-weight:700;
+      font-size:18px;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      background:linear-gradient(135deg,#eef2ff,#ecfeff);
+      padding:80px 20px 60px;
+    }
+
+    .hero-card{
+      background:var(--card);
+      border-radius:22px;
+      box-shadow:0 20px 50px rgba(0,0,0,0.08);
+      padding:50px;
+    }
+
+    .profile-img{
+      width:170px;
+      height:170px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid #fff;
+      box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    section{padding:80px 0;}
+
+    .section-title{
+      text-align:center;
+      font-weight:700;
+      margin-bottom:40px;
+    }
+
+    .card-ui{
+      background:var(--card);
+      border-radius:16px;
+      padding:25px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.06);
+      transition:0.3s;
+      height:100%;
+    }
+
+    .card-ui:hover{transform:translateY(-6px);}
+
+    .badge-ui{
+      background:#eef2ff;
+      color:var(--primary);
+      padding:6px 12px;
+      border-radius:20px;
+      margin:4px;
+      display:inline-block;
+      font-size:13px;
+    }
+
+    .tag{
+      background:#e0f2fe;
+      color:#0369a1;
+      padding:3px 10px;
+      border-radius:12px;
+      font-size:12px;
+    }
+
+    footer{
+      text-align:center;
+      padding:25px;
+      background:#fff;
+      border-top:1px solid #e5e7eb;
+    }
+
+    a{text-decoration:none;}
+
+    .btn-primary{
+      background:var(--primary);
+      border:none;
+    }
+
+    .btn-primary:hover{background:#3730a3;}
+
+    @media(max-width:768px){
+      .nav-links{gap:10px; overflow-x:auto; white-space:nowrap;}
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="brand">Aiswarya S</div>
+    <div class="nav-links">  <p></p>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="hero">
+  <div class="container">
+    <div class="row hero-card align-items-center">
+      <div class="col-md-4 text-center">
+        <img class="profile-img" src="./profile.jpeg" alt="Aiswarya" />
+      </div>
+      <div class="col-md-8">
+        <h1 class="fw-bold">Aiswarya S</h1>
+        <p class="text-muted">Aspiring Full Stack Developer | Computer Science Engineer</p>
+        <p>I build scalable, responsive and intelligent web applications using modern technologies like React, Java, Spring Boot and MySQL.</p>
+        <a href="#projects" class="btn btn-primary mt-2">Explore Projects</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">Career Objective</h2>
+    <div class="card-ui">To secure a Full Stack Developer role in a growth-oriented organization where I can contribute my expertise in building end-to-end web applications using modern technologies like React, Spring Boot, and MySQL, while continuously improving my skills and delivering high-quality, scalable software solutions.</div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <div class="row g-4">
+      <div class="col-md-6"><div class="card-ui"><h5>B.E CSE</h5><p>Knowledge Institute of Technology (2023–2027)</p><p>CGPA: 8.5 (Upto 5th Sem)</p></div></div>
+      <div class="col-md-6"><div class="card-ui"><h5>HSC</h5><p>Mahendra Matric Higher Secondary School</p><p>Score: 92.83%</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="card-ui text-center">
+      <span class="badge-ui">C</span>
+      <span class="badge-ui">Java</span>
+      <span class="badge-ui">HTML5</span>
+      <span class="badge-ui">CSS3</span>
+      <span class="badge-ui">Bootstrap</span>
+      <span class="badge-ui">React JS</span>
+      <span class="badge-ui">MySQL</span>
+      <span class="badge-ui">DSA</span>
+      <span class="badge-ui">OOP</span>
+      <span class="badge-ui">Git</span>
+      <span class="badge-ui">VS Code</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="card-ui"><h5>Vendor Connect Platform</h5><span class="tag">Full Stack</span><p>Platform connecting vendors and customers with product listing and order management.</p></div></div>
+      <div class="col-md-4"><div class="card-ui"><h5>Smart Assistive System</h5><span class="tag">AI</span><p>Emotion recognition system for autism support and caregiver assistance.</p></div></div>
+      <div class="col-md-4"><div class="card-ui"><h5>Travel Planner App</h5><span class="tag">React</span><p>Responsive travel planner with itinerary management and destination discovery.</p></div></div>
+      <div class="col-md-4"><div class="card-ui"><h5>Online Exam Processor</h5><span class="tag">Java</span><p>Automated result calculation system with grading logic.</p></div></div>
+      <div class="col-md-4"><div class="card-ui"><h5>Shopping Cart System</h5><span class="tag">Web</span><p>E-commerce cart system with MySQL backend integration.</p></div></div>
+      <div class="col-md-4"><div class="card-ui"><h5>Plant Disease Detection</h5><span class="tag">AI/ML</span><p>AI-based system for detecting plant diseases using image recognition.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="container">
+    <h2 class="section-title">Certifications</h2>
+    <div class="card-ui">
+      <ul>
+        <li>NPTEL - Integrated Waste Management (Elite)</li>
+        <li>Deep Learning</li>
+        <li>Generative AI - i18n Solutions</li>
+        <li>Value Added Program Certifications</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="container">
+    <h2 class="section-title">Activities & Achievements</h2>
+    <div class="card-ui">
+      <ul>
+        <li>Published research paper on AI-driven Emergency Healthcare System (IJRAR)</li>
+        <li>NASSCOM Hackathon Final Jury Round Participant</li>
+        <li>Top 20 at A2 Hackfest qRaptor AI Hackathon</li>
+        <li>Multiple hackathon participations and technical presentations</li>
+        <li>Achievers Day Award (2025 & 2026)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <div class="card-ui text-center">
+      <p><b>Email:</b> aiswarya28095@gmail.com</p>
+      <p><b>LinkedIn:</b> https://www.linkedin.com/in/aiswarya-saravanakumar</p>
+      <p><b>GitHub:</b> https://github.com/Aiswarya-saravanakumar</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Aiswarya S </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
